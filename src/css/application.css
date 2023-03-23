@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: GrenzeGotisch;
+  src: url('fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: GrenzeGotischBold;
+  src: url('fonts/Grenze_Gotisch/static/GrenzeGotisch-Bold.ttf');
+}
+
+@font-face {
+  font-family: ParisienneRegular;
+  src: url('fonts/Parisienne/Parisienne-Regular.ttf');
+}
+
+
+
+p {
+  font-family: GrenzeGotisch;
+}
+
+h4 {
+  font-family: GrenzeGotischBold;
+}
+
+h1 {
+  font-family: ParisienneRegular;
+}
+
+.profile-img{
+  background-image: url('img/profile_image.jpg');
+  background-position: center;
+  background-size: contain;
+  @apply w-60 h-60 bg-red-100 rounded-full mt-32 mx-auto
+}

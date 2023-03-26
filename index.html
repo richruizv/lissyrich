@@ -2,46 +2,142 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <title>Lissette y Ricardo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./dist/application.css" rel="stylesheet">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body>
-  <header class="fixed top-0 left-0 w-full bg-white shadow-lg">
-    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <ul class="flex justify-center">
-        <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium text-sm px-4 py-2">Section 1</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium text-sm px-4 py-2">Section 2</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium text-sm px-4 py-2">Section 3</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium text-sm px-4 py-2">Section 4</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium text-sm px-4 py-2">Section 5</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="text-center border-2 h-screen flex flex-col">
-    <div class="h-1/2">
-      <div class="profile-img">
+<body class="bg-gray-100">
+  <main class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="fixed bottom-4 z-10 flex justify-center w-full b-2">
+      <button id="navigation-button" class="bg-red-600 text-white rounded-full py-2 px-4 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50" data-section="1">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-1.2c3.781 0 6.8-3.019 6.8-6.8S13.781 3.2 10 3.2 3.2 6.219 3.2 10 6.219 16.8 10 16.8zm0-6.125l2.509-2.51a.9.9 0 011.271 1.271l-3.3 3.3a.9.9 0 01-1.271 0l-3.3-3.3a.9.9 0 011.271-1.271L10 11.675z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+    <section id="section-1">
+      <div class="bg-gray-100 h-screen flex flex-col justify-start items-center">
+        <div class="max-w-md mx-auto text-center">
+          <p class="text-lg md:text-xl mt-28 mb-4"> Os invitamos a celebrar nuestra boda</p>
+          <div class="profile-img">
+          </div>
+          <h1 class="text-4xl md:text-6xl mb-16"> Lissette y Ricardo</h1>
+          <p class="text-lg md:text-xl"> Guarda la fecha</p>
+          <h4 class="text-2xl"> Sabado, 29 de Julio 14:00 hrs </h4>
+        </div>
       </div>
+    </section>
+    <section id="section-2">
+      <section class="relative w-full h-screen overflow-hidden">
+        <div class="parallax absolute top-0 left-0 w-full h-full z-0 bg-cover bg-center"  data-speed="0.7">
+          <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60  flex flex-col items-center justify-center h-full">
+            <!-- Aquí irían los elementos de texto y otros contenidos que quieras superponer en la capa -->
+            <p class="text-white  px-4 text-xl md:text-xl text-justify max-w-md mb-8 description">Os convocamos a todas las damas de noble corazón y valientes caballeros a uniros a una celebración épica del amor en el majestuoso castillo en Tehuacán Puebla. Será un honor contar con vuestra presencia mientras unimos nuestras almas en un juramento sagrado en un día lleno de alegría, música y banquetes dignos de los reyes. Esperamos que os unáis a nosotros en este día especial y que os atreváis a disfrutar de una experiencia única en la vida.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="section-3">
+      <div class="w-full h-screen">
+        <div class="flex flex-col">
+          <div class="w-full h-64">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d945.7028907910651!2d-97.42066712469301!3d18.537415645595708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1679801208956!5m2!1ses!2smx" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="w-full  flex items-center justify-center">
+            <div class="text-center md:text-left mt-8 mx-4">
+              <h4 class="text-2xl">Dirección del lugar</h2>
+              <h6 class="mb-8">Genesis L15 M2 esq. con Guadalupe Victoria, Santiago Miahuatlan. Tehuacán, Puebla 75820</h6>
+              <p class="mb-4 text-justify">En los días previos a la celebración, os haremos saber sobre los detalles de la logística, para que podáis planificar vuestro viaje con antelación. Si acaso no contáis con un corcel para llegar al castillo, estaremos encantados de proporcionaros información sobre las distintas formas de transporte disponibles.</p>
+              <p class="bold">Estad atentos a los mensajes venideros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-4">
+      <div class="w-full h-screen px-4 py-8">
+        <h4 class="text-2xl mb-4"> Parafernalia</h4>
+        <img class="w-full  mb-4" src="src/img/campamento-medieval.jpg">
+        <p class="text-justify mb-4">
+          ⚔🛡Nuestra boda será en estilo medieval y, por lo tanto, os invitamos <b>a vestirse acorde a la ocasión</b> 🥻👘.
+        </p>
+        <p class="text-justify mb-4">
+          Portéis vuestros mejores atuendos y dejéis llevaros por la magia de esta época de caballeros y doncellas. Esperamos con entusiasmo vuestro apoyo y presencia, y estamos seguros de que juntos crearemos un ambiente inolvidable en este día tan especial 👑.
+        </p>
+      </div>
+    </section>
+    <section id="section-5" class="mb-12">
+      <div class="w-full h-screen  px-4 py-8">
+        <h4 class="text-2xl mb-4">Mesa de regalos</h2>
+        <p class="text-lg text-justify">Si deseáis honrarnos con vuestro regalo, hemos preparado para vuestra comodidad una mesa de regalos en línea. Por favor, acceded a ella a través del siguiente enlace, donde encontraréis una lista de obsequios que os permitirán mostrar vuestro afecto y generosidad en este día especial.</p>
+        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Visitar
+          la mesa de regalos</a>
+      </div>
+    </section>
+    <section id="section-6" class="mb-12">
+      <div class="w-full h-screen">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Registro</h2>
+        <p class="text-gray-700 leading-7">Si aún no ha confirmado su asistencia a la boda, por favor hágalo en el
+          siguiente formulario:</p>
+        <form action="#" class="mt-4">
+          <label class="block font-bold text-gray-700 mb-2" for="nombre">Nombre:</label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="nombre" type="text" placeholder="Ingrese su nombre">
+          <label class="block font-bold text-gray-700 mb-2 mt-4" for="asistencia">¿Asistirás a la boda?</label>
+          <div class="flex items-center mb-4">
+            <input id="si" type="radio" name="asistencia"
+              class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="si">
+            <label for="si" class="ml-2 block text-gray-700 font-bold">
+              Sí
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input id="no" type="radio" name="asistencia"
+              class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="no">
+            <label for="no" class="ml-2 block text-gray-700 font-bold">
+              No
+            </label>
+          </div>
+          <label class="block font-bold text-gray-700 mb-2 mt-4" for="mensaje">¿Deseas agregar algún mensaje
+            adicional?</label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Enviar
+            registro</button>
+        </form>
+      </div>
+    </section>
     </div>
-    <div>
-      <p class="text-lg md:text-xl mb-4"> Te invitamos a celebrar nuestra boda</p>
-      <h1 class="text-4xl md:text-6xl mb-16"> Lissette y Ricardo</h1>
-      <p class="text-lg md:text-xl"> Guarda la fecha</p>
-      <h4 class="text-2xl"> Sabado, 29 de Julio 14:00 hrs </h4>
+
+  </main>
+  <footer class="bg-gray-200 py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-700 leading-7">© 2023 Todos los derechos reservados | Diseñado por [Nombre del diseñador]</p>
     </div>
-    
-    <!--h1 class="text-3xl font-bold underline" id="app">{{ message }}</h1-->
-  </section>
-  </h1>
-  <script>
-    const { createApp } = Vue
-    createApp({
-      data() {
-        return {
-          message: 'Hello wedding invitation webpage!'
-        }
-      }
-    }).mount('#app')
-  </script>
+  </footer>
+</body>
+<script>
+  let navButton = document.getElementById('navigation-button')
+  navButton.addEventListener('click', function (e) {
+    e.preventDefault()
+    // Obtener la sección de destino a la que se debe desplazar suavemente
+    if(parseInt(navButton.dataset.section) < 6)
+      navButton.dataset.section = parseInt(navButton.dataset.section) + 1
+    else
+      navButton.dataset.section = 1
+
+    const section =  document.getElementById("section-"+navButton.dataset.section)
+
+    // Realizar un desplazamiento suave a la sección de destino
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+</html>
 </body>
 </html>

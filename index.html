@@ -5,12 +5,12 @@
   <title>Lissette y Ricardo</title>
   <meta name="description" content="Os invitamos a celebrar nuestra boda">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="webpage" />
   <meta property="og:title" content="Lissette y Ricardo" />
   <meta property="og:description" content="Os invitamos a celebrar nuestra boda" />
   <meta property="og:image" content="https://richruizv.github.io/lissyrich/src/img/profile_image.jpg" />
   <meta property="og:url" content="https://richruizv.github.io/lissyrich" />
   <link href="./dist/application.css" rel="stylesheet">
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body class="bg-gray-100"> 
   <main class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -66,22 +66,48 @@
     </section>
     <section id="section-4">
       <div class="w-full h-screen px-4 py-8">
-        <h4 class="text-2xl mb-4"> Parafernalia</h4>
+        <h4 class="text-2xl mb-4">🥻 Parafernalia 👑</h4>
         <img class="w-full  mb-4" src="src/img/campamento-medieval.jpg">
         <p class="text-justify mb-4">
-          ⚔🛡Nuestra boda será en estilo medieval y, por lo tanto, os invitamos <b>a vestirse acorde a la ocasión</b> 🥻👘.
+          ⚔🛡Nuestra boda será en estilo medieval y, por lo tanto, os invitamos <b>a vestirse acorde a la ocasión</b>🛡⚔
         </p>
         <p class="text-justify mb-4">
-          Portéis vuestros mejores atuendos y dejéis llevaros por la magia de esta época de caballeros y doncellas. Esperamos con entusiasmo vuestro apoyo y presencia, y estamos seguros de que juntos crearemos un ambiente inolvidable en este día tan especial 👑.
+          Portéis vuestros mejores atuendos y dejéis llevaros por la magia de esta época de caballeros y doncellas. Esperamos con entusiasmo vuestro apoyo y presencia, y estamos seguros de que juntos crearemos un ambiente inolvidable en este día tan especial.
         </p>
+        <div class="mt-4 flex justify-center">
+          <a id="popup-link" href="javascript:void()" class="bg-yellow-700 text-white rounded-lg py-2 px-4 hover:bg-yellow-900 transition duration-300">Ideas para atuendos</a>
+          <div id="popup-container">
+            <div id="popup-content">
+              <div class="mb-8">
+                <h4 class="text-2xl mb-4">Ideas para atuendos</h4>
+                <p>Puedes encontrar algunas tiendas para conseguir tu atuendo aquí:</p>
+                <ul>
+                  <li><a> Tienda para comprar trajes 1</a></li>
+                  <li><a> Tienda para comprar trajes 2</a></li>
+                  <li><a> Tienda para comprar trajes 3</a></li>
+                </ul>
+                <p>O puedes crear tu traje aquí:</p>
+                <ul>
+                  <li><a> Idea para hacer trajes 1</a></li>
+                  <li><a> Idea para hacer trajes 2</a></li>
+                  <li><a> Idea para hacer trajes 3</a></li>
+                </ul>
+              </div>
+              <div>
+                <a id="popup-close" href="javascript:void()" class="bg-yellow-700 text-white rounded-lg py-2 px-4 hover:bg-yellow-900 transition duration-300">Cerrar</a>
+              </div>
+            </div>
+        </div>
+        </div>
       </div>
     </section>
     <section id="section-5" class="mb-12">
       <div class="w-full h-screen  px-4 py-8">
         <h4 class="text-2xl mb-4">Mesa de regalos</h2>
         <p class="text-lg text-justify">Si deseáis honrarnos con vuestro regalo, hemos preparado para vuestra comodidad una mesa de regalos en línea. Por favor, acceded a ella a través del siguiente enlace, donde encontraréis una lista de obsequios que os permitirán mostrar vuestro afecto y generosidad en este día especial.</p>
-        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Visitar
-          la mesa de regalos</a>
+        <div class="mt-4 flex justify-center">
+          <a href="https://www.amazon.com.mx/wedding/share/bodaLissyRichard2023" target="_blank" class="bg-yellow-700 text-white rounded-lg py-2 px-4 hover:bg-yellow-900 transition duration-300">Ver mesa de regalos</a>
+        </div>
       </div>
     </section>
     <section id="section-6" class="mb-12">
@@ -122,11 +148,11 @@
     </div>
 
   </main>
-  <footer class="bg-gray-200 py-4">
+  <!--footer class="bg-gray-200 py-4">
     <div class="container mx-auto text-center">
       <p class="text-gray-700 leading-7">© 2023 Todos los derechos reservados | Diseñado por [Nombre del diseñador]</p>
     </div>
-  </footer>
+  </footer-->
 </body>
 <script>
   let navButton = document.getElementById('navigation-button')
@@ -144,6 +170,18 @@
     section.scrollIntoView({
       behavior: 'smooth'
     });
+  });
+
+  const popupLink = document.getElementById('popup-link');
+  const popupContainer = document.getElementById('popup-container');
+  const popupClose = document.getElementById('popup-close');
+
+  popupLink.addEventListener('click', () => {
+    popupContainer.style.display = 'flex';
+  });
+
+  popupClose.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
   });
 </script>
 

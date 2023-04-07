@@ -30,14 +30,27 @@ h1 {
 }
 
 .profile-img{
-  background-image: url('img/profile_image.jpg');
-  background-position: center;
-  background-size: contain;
+  background-image: url('img/profile_image.webp');
+  background-size: cover;
+  background-position: 70%;
   @apply w-40 h-40 bg-red-100 rounded-full mx-auto
 }
 
-.parallax {
+.gift-table-background{
+  background-image: url('img/gift_table.webp');
+  background-size: cover;
+}
+
+.end-image-background{
+  background-image: url('img/end_image.jpg');
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.intro-background {
   background-image: url('img/castle_background.webp');
+  background-size: auto 100%;
+  background-position: 70%;
 }
 
 .description:first-letter {
@@ -59,8 +72,8 @@ h1 {
 
 #popup-content {
   background-color: white;
-  padding: 2rem;
-  max-width: 80%;
+  padding: 1rem;
+  max-width: 90%;
   text-align: center;
 }
 

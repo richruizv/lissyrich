@@ -13,9 +13,9 @@
   <meta property="og:url" content="https://richruizv.github.io/lissyrich" />
   <link href="./dist/application.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100"> 
-  <main class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-    <div class="fixed bottom-4 z-10 flex justify-center w-full b-2">
+<body class="bg-gray-100 md:w-[500px] md:mx-auto"> 
+  <main class="container mx-auto grid grid-cols-1 ">
+    <div class="fixed bottom-4 z-10 flex justify-center w-full md:w-[500px] b-2 ">
       <button id="navigation-button" class="bg-red-600 text-white rounded-full py-2 px-4 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50" data-section="1">
         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-1.2c3.781 0 6.8-3.019 6.8-6.8S13.781 3.2 10 3.2 3.2 6.219 3.2 10 6.219 16.8 10 16.8zm0-6.125l2.509-2.51a.9.9 0 011.271 1.271l-3.3 3.3a.9.9 0 01-1.271 0l-3.3-3.3a.9.9 0 011.271-1.271L10 11.675z" clip-rule="evenodd" />
@@ -26,7 +26,7 @@
       <div class="bg-gray-100 h-screen flex flex-col justify-start items-center">
         <div class="max-w-md mx-auto text-center">
           <p class="text-lg md:text-xl mt-28 mb-4"> Os invitamos a celebrar nuestra boda</p>
-          <div class="flex md:w-3/4 md:mx-auto">
+          <div class="flex md:w-96 md:mx-auto">
             <img src="src/img/laurel_left.webp" class="-mr-12">
             <div class="profile-img">
             </div>
@@ -128,7 +128,7 @@
             id="invites" name="invites" type="number" max="5" required
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Número de invitados">
-          <label class="block font-bold text-gray-700 mb-2 mt-4" for="asistencia">¿Asistirás a la boda?</label>
+          <h5 class="text-xl my-4">¿Asistirás a la boda?</h5>
           <div class="flex">
           <div class="flex items-center w-1/2 ">
             <input id="si" type="radio" name="attendance" required
@@ -145,14 +145,13 @@
             </label>
           </div>
           </div>
-          <label class="block font-bold text-gray-700 mb-2 mt-4" for="mensaje">¿Deseas agregar algún mensaje
-            adicional?</label>
+          <h5 class="text-xl my-4">¿Deseas agregar algún mensaje adicional?</h5>
           <textarea
             name="considerations"
             placeholder="Ejemplo: Llevaré dos invitados, no llevo coche, etc."
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="considerations" placeholder="Ingrese su mensaje"></textarea>
-          <button id="wed-submit-button" type="submit" class="bg-lime-800 hover:bg-lime-900 float-right text-white font-bold py-2 px-4 rounded mt-4">Enviar registro</button>
+          <button  type="submit" class="bg-lime-800 hover:bg-lime-900 float-right texl-lg text-white font-bold py-2 px-4 rounded mt-4">Enviar registro</button>
         </form>
       </div>
     </section>
@@ -178,7 +177,7 @@
     if(parseInt(navButton.dataset.section) < 7)
       navButton.dataset.section = parseInt(navButton.dataset.section) + 1
     else
-      navButton.dataset.section = 1
+      navButton.dataset.section = 0
 
     const section =  document.getElementById("section-"+navButton.dataset.section)
 
